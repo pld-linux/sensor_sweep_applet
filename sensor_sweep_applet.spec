@@ -14,7 +14,6 @@ Requires:	gnome-core >= 1.2.3
 Requires:	lm_sensors
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-
 %description
 Sensor Sweep Applet is a GNOME panel applet that allows you to monitor
 your systems health through the lm_sensors kernel modules. Sensor
@@ -53,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/%{name}
 %{_sysconfdir}/CORBA/servers/%{name}.gnorba
 %{_datadir}/applets/Monitors/%{name}.desktop
-%{_datadir}/pixmaps/%{name}.png
+%{_pixmapsdir}/%{name}.png
