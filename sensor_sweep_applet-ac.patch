@@ -1,0 +1,26 @@
+--- sensor_sweep_applet-0.20.0/configure.in~	Sun Jul  8 06:48:30 2001
++++ sensor_sweep_applet-0.20.0/configure.in	Fri Nov 22 20:01:44 2002
+@@ -6,8 +6,6 @@
+ 
+ AM_MAINTAINER_MODE
+ 
+-AM_ACLOCAL_INCLUDE(macros)
+-
+ GNOME_INIT(applets)
+ 
+ AC_PROG_CC
+--- sensor_sweep_applet-0.20.0/macros/Makefile.am~	Wed Feb 14 05:38:34 2001
++++ sensor_sweep_applet-0.20.0/macros/Makefile.am	Fri Nov 22 20:03:18 2002
+@@ -29,12 +29,3 @@
+ @MAINT@macros.dep: Makefile.am
+ @MAINT@	@echo '$$(top_srcdir)/aclocal.m4: $(MACROS:%=macros/%)' > $@
+ 
+-if INSIDE_GNOME_COMMON
+-gnome_aclocaldir = $(datadir)/aclocal/gnome
+-
+-gnome-macros.dep: Makefile.am
+-	@echo '$$(top_srcdir)/aclocal.m4: $(MACROS:%=$(gnome_aclocaldir)/%)' > $@
+-
+-gnome_aclocal_DATA = $(MACROS) gnome-macros.dep gnome-common.m4 autogen.sh
+-
+-endif
