@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.coverfire.com/sensor_sweep_applet/%{name}-%{version}.tar.gz
+# Source0-md5:	70f1f2396e588118d480dee46b7997dd
 Patch0:		%{name}-ac.patch
 URL:		http://www.coverfire.com/sensor_sweep_applet/
 BuildRequires:	lm_sensors-devel
