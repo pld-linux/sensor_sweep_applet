@@ -13,7 +13,6 @@ Requires:	gnome-core >= 1.2.3
 Requires:	lm_sensors
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         _prefix         /usr/X11R6
 
 %description
 Sensor Sweep Applet is a GNOME panel applet that allows you to monitor
