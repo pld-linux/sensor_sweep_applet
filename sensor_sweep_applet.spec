@@ -44,14 +44,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README ChangeLog NEWS TODO AUTHORS
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.gz ChangeLog.gz NEWS.gz AUTHORS.gz TODO.gz
+%doc README ChangeLog NEWS TODO AUTHORS
 %attr(755,root,root) %{_bindir}/%{name}
 %{_sysconfdir}/CORBA/servers/%{name}.gnorba
 %{_datadir}/applets/Monitors/%{name}.desktop
