@@ -2,10 +2,11 @@ Summary:	A GNOME panel applet that allows to monitor a system through the lm_sen
 Summary(pl):	Aplet panelu GNOME monitoruj±cy system przez lm_sensors
 Name:		sensor_sweep_applet
 Version:	0.20.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.coverfire.com/sensor_sweep_applet/%{name}-%{version}.tar.gz
+Patch0:		%{name}-ac.patch
 URL:		http://www.coverfire.com/sensor_sweep_applet/
 BuildRequires:	lm_sensors-devel
 Requires:	gnome-core >= 1.2.3
@@ -28,9 +29,14 @@ monitorowaæ.
 
 %prep
 %setup  -q
+%patch0 -p1
 
 %build
-%configure2_13
+%{__libtoolize}
+%{__aclocal} -I macros
+%{__automake}
+%{__autoconf}
+%configure
 %{__make}
 
 %install
