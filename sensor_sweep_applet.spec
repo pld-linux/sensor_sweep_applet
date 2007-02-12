@@ -1,5 +1,5 @@
 Summary:	A GNOME panel applet that allows to monitor a system through the lm_sensors
-Summary(pl):	Aplet panelu GNOME monitoruj±cy system przez lm_sensors
+Summary(pl.UTF-8):   Aplet panelu GNOME monitorujÄ…cy system przez lm_sensors
 Name:		sensor_sweep_applet
 Version:	0.20.0
 Release:	2
@@ -23,11 +23,11 @@ your systems health through the lm_sensors kernel modules. Sensor
 Sweep is extremely configurable allowing you to specify exactly which
 sensors you wish to monitor.
 
-%description -l pl
-Sensor Sweep Applet to aplet panelu GNOME pozwalaj±cy monitorowaæ
-dzia³anie systemu poprzez modu³y j±dra lm_sensors. Sensor Sweep jest
-bardzo konfigurowalny, pozwalaj±c podaæ które dok³adnie sensory
-monitorowaæ.
+%description -l pl.UTF-8
+Sensor Sweep Applet to aplet panelu GNOME pozwalajÄ…cy monitorowaÄ‡
+dziaÅ‚anie systemu poprzez moduÅ‚y jÄ…dra lm_sensors. Sensor Sweep jest
+bardzo konfigurowalny, pozwalajÄ…c podaÄ‡ ktÃ³re dokÅ‚adnie sensory
+monitorowaÄ‡.
 
 %prep
 %setup  -q
