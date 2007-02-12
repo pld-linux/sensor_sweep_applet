@@ -1,5 +1,5 @@
 Summary:	A GNOME panel applet that allows to monitor a system through the lm_sensors
-Summary(pl.UTF-8):   Aplet panelu GNOME monitorujący system przez lm_sensors
+Summary(pl.UTF-8):	Aplet panelu GNOME monitorujący system przez lm_sensors
 Name:		sensor_sweep_applet
 Version:	0.20.0
 Release:	2
